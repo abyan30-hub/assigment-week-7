@@ -1,0 +1,112 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #74ebd5 0%, #9face6 100%);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 50px;
+}
+
+.container {
+  width: 90%;
+  max-width: 500px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 25px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 2px solid #eee;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+  border-color: #74ebd5;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+#add-task {
+  background-color: #4CAF50;
+  color: white;
+  margin: 10px 0;
+}
+
+#add-task:hover {
+  background-color: #45a049;
+  transform: translateY(-2px);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background-color: #fff;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 5px solid #74ebd5;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  transition: 0.3s;
+}
+
+/* --- EFEK DONE / SELESAI --- */
+li.completed {
+  border-left-color: #ccc;
+  background-color: #f9f9f9;
+  opacity: 0.7;
+}
+
+li.completed span {
+  text-decoration: line-through; /* Coretan teks */
+  color: #888;
+}
+
+.btn-group {
+  display: flex;
+  gap: 5px;
+}
+
+li button {
+  padding: 6px 12px;
+  font-size: 12px;
+  color: white;
+}
+
+.done-btn { background-color: #2196F3; }
+.edit-btn { background-color: #ff9800; }
+.delete-btn { background-color: #f44336; }
+
+button:hover { opacity: 0.8; }
